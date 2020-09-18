@@ -2,21 +2,41 @@ body{
 font-size: 100px;
 font-family: 'Patrick Hand SC', cursive;
 margin: 0px;
+
 }
 
-.goraa{
+
+
+
+.gora{
+width: 100%;
+height: 150px;
 margin-top: 100px;
-background-color: white;
+background-color: rgb(255, 255, 255);
 text-align: center;
-opacity: 0.5;
--webkit-transition: opacity 2s ease-in-out; 
--moz-transition: opacity 2s ease-in-out;
--ms-transition: opacity 2s ease-in-out;
--o-transition: opacity 2s ease-in-out;
+position: fixed;
+
 transition: opacity 2s ease-in-out;
+color: black;
+z-index: 2;
 }
 
-goraa.fade{
-opacity: 0;
 
+.wave {
+    width: 1500px;
+    height: 1500px;
+    position: fixed;
+    top: -25%;
+    
+    margin-left: -500px;
+    margin-top: -700px;
+    border-radius: 35%;
+    background: rgba(255, 255, 255, .75);
+    animation: wave 15s infinite linear;
+    z-index: 1;
+  }
+
+  @keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
 }
