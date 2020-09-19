@@ -35,14 +35,17 @@ body.style.color = 'black';
 setInterval(color_change, 1000);
 
 
-fetch('http://polishwords.com.pl/grono/api.php?method=randomQuote')
+fetch('http://polishwords.com.pl/grono/api.php?method=randomQuote', {
+    method: 'POST',
+    headers:{
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        name: 'user'
+    })
+})
 .then(res => {
-    if (res.ok){
-console.log('SUCCES')
-                }
-else{
-console.log("Not Successful")
-    }
+   return res.json()
 })
 .then(data => console.log(data))
 .catch(error => console.log('ERROR'))
