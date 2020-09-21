@@ -3,9 +3,8 @@ font-size: 100px;
 font-family: 'Patrick Hand SC', cursive;
 margin: 0px;
 
+
 }
-
-
 
 
 .gora{
@@ -15,12 +14,26 @@ margin-top: 200px;
 background-color: rgb(255, 255, 255);
 text-align: center;
 position: fixed;
-
-transition: opacity 2s ease-in-out;
-color: black;
+color: rgb(0, 0, 0);
 z-index: 2;
+animation: transitionIn 2s;
+margin-bottom: 20px;
+
 }
 
+
+@keyframes transitionIn{
+
+  from{
+opacity: 0;
+transform: rotateX(-10dec);
+  }
+  to{
+    opacity: 1;
+transform: rotateX(0);
+  }
+
+}
 
 .wave {
     width: 1500px;
@@ -39,4 +52,16 @@ z-index: 2;
   @keyframes wave {
   from { transform: rotate(0deg);}
   from { transform: rotate(360deg);}
+}
+
+.cytat{
+width: 50%;
+height: 200px;
+background-color: white;
+text-align: center;
+margin-top: 450px;
+position: absolute;
+
+
+
 }
