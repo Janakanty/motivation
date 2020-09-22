@@ -14,12 +14,19 @@
   <div  class="gora"> Szukasz motywacji?</div>
   <div  class="cytat"> * </div>
 
+  <?php
+  require "dbconnect.php";
+  $conn = mysqli_connect("127.0.0.1", "root", "", "tresc") or die("Błąd połączenia!");
 
+  /*$cyataty = $_POST["cytaty"];
 
-    
+  echo $tresc;
 
-
-
+  $q = "SELECT cytat, autor FROM tresc WHERE id='1'";
+  mysqli_close($conn);
+*/
+  ?>
+  
 
 <script src="program.js"></script>
 <script src="jquery-3.5.1.min.js"></script>
