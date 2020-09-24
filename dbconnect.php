@@ -3,6 +3,5 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "tresc";
-
+$db = "cytaty";
 ?>

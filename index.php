@@ -12,21 +12,32 @@
 <body>
   <div  class="wave"></div>
   <div  class="gora"> Szukasz motywacji?</div>
-  <div  class="cytat"> * </div>
 
-  <?php
-  require "dbconnect.php";
-  $conn = mysqli_connect("127.0.0.1", "root", "", "tresc") or die("Błąd połączenia!");
+  <div  class="cytat">
+                  
+                <div class="text">
+                <?php
 
-  /*$cyataty = $_POST["cytaty"];
+                require "dbconnect.php";
+                $conn = mysqli_connect($host, $user, $pass, $db) or die("Błąd połączenia!");
 
-  echo $tresc;
+                $tresc =  isset($_POST["tresc"]);
+                $i=rand(1,10);
+                $q = "SELECT cytat, autor FROM tresc WHERE id=$i";
+                $result =mysqli_query($conn, $q) or die("Problemy z odczytem!");
 
-  $q = "SELECT cytat, autor FROM tresc WHERE id='1'";
-  mysqli_close($conn);
-*/
-  ?>
-  
+                $row =mysqli_fetch_assoc($result);
+                printf("%s (%s)\n", $row["cytat"], $row["autor"]);
+
+                mysqli_free_result($result);//co to?
+
+
+                mysqli_close($conn);
+                ?>
+                </div>
+  </div>
+
+
 
 <script src="program.js"></script>
 <script src="jquery-3.5.1.min.js"></script>

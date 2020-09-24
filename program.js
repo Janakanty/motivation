@@ -34,18 +34,3 @@ color_change();
 body.style.color = 'black';
 setInterval(color_change, 1000);
 
-
-fetch('http://polishwords.com.pl/grono/api.php?method=randomQuote', {
-    method: 'POST',
-    headers:{
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        name: 'user'
-    })
-})
-.then(res => {
-   return res.json()
-})
-.then(data => console.log(data))
-.catch(error => console.log('ERROR'))
