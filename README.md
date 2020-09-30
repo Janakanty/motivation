@@ -18,7 +18,7 @@ Na końcu wpisać w przeglądarce adres http://localhost/Motywacja/
 
 The program displays a random, motivating quote.
 
-To run the website you need to download xampp.
+To run the website you need to download and instal xampp.
 
 Paste the project into the htdocs folder.
 
