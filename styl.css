@@ -1,6 +1,7 @@
 body{
 font-family: 'Patrick Hand SC', cursive;
-margin: 0 auto;
+margin: 0;
+padding: 0;
 }
 
 
@@ -15,7 +16,6 @@ position: relative;
 color: rgb(0, 0, 0);
 z-index: 2;
 animation: transitionIn 2s;
-margin-bottom: 20px;
 font-size: 100px;
 
 }
@@ -53,17 +53,13 @@ transform: rotateX(0);
 }
 
 .cytat{
-width: 50%;
 background-color: white;
 text-align: center;
-margin-top: 100px;
-
-position: absolute;
+position: relative;
 border-radius: 70px ;
-border-top: 5px black none;
 z-index: 2;
 font-size: 20px;
-padding: 100px;
+margin: 10%;
 
 }
 
