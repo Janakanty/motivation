@@ -31,3 +31,5 @@ Import the "tresc.sql" file from the project.
 At the end enter "http://localhost/Motywacja/ " in your browser.
 
 [Adam Kowalski, program for demotivators. HTML,CSS,JS,PHP]
+
+![prezentacja](https://user-images.githubusercontent.com/62144769/102794876-479f7300-43ac-11eb-981b-0f8da4dd2794.gif)
